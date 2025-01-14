@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="pr.css">
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .card img {
+            width: 100%; 
+            height: 380px; 
+            object-fit: cover; 
+        }
+        
+    </style>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <script>
+
+function currTime(){
+    const date=new Date();
+const ftime=date.toLocaleString();
+document.getElementById('time').innerHTML=ftime;
+
+}
+setInterval(currTime,1000);
+currTime();
+
+    </script>
+
+</head>
+<body style="background-color:  rgb(252, 243, 245);">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  
+
+<div class="btn-group container-lg">
+    <div class="row">
+        <div class="col-lg-18 col-md-16 col-sm-14">
+    <a href="index.html" class="btn btn-primary" >Home</a>
+    <a href="Successstories.html" class="btn btn-primary">Success stories</a>
+    <a href="Contractus.html" class="btn btn-primary"> Contact Us </a>
+    <a href="Resourceslibrary.html" class="btn btn-primary">Resources library </a>
+    <a href="aboutus.html" class="btn btn-primary">about us </a>
+
+
+    </div>
+    </div>
+</div>
+    
+
+<div class="container-lg " style="margin-top: 60px;">
+    <form onsubmit="ValidateForm()" > 
+    <div class="row">
+
+        <div class="col-auto">
+
+            <p id="time" ></p>
+
+        </div>
+        <div class="row justify-content-center align-items-center">
+
+            <div class="col-auto">
+
+              <label>Name:</label>
+
+            </div>
+
+            <div class="col-auto">
+              <input type="text" id="user" class="form-control" >
+            </div>
+
+            <div class="col-auto"> 
+                <span id="er1" style="color: red; font-size: 0.8em;"></span>
+
+            </div>
+
+            <div class="col-auto">
+                <label >Age :</label>
+              </div>
+              <div class="col-auto">
+                <input type="number" id="age" class="form-control" >
+              </div>
+              <div class="col-auto"> 
+                  <span id="er2" style="color: red; font-size: 0.8em;"></span>
+  
+              </div></div>
+              <br>
+              <div class="row justify-content-center align-items-center">
+              <div class="col-auto">
+                <label >Weight:</label>
+              </div>
+              <div class="col-auto">
+                <input type="number" id="wg" class="form-control" placeholder="Weight In KG" style="text-align: center;">
+              </div>
+              <div class="col-auto"> 
+                  <span id="er3" style="color: red; font-size: 0.8em;"></span>
+  
+              </div>
+
+
+              <div class="col-auto">
+                <label >Height:</label>
+              </div>
+              <div class="col-auto">
+                <input type="number" id="hg" class="form-control" placeholder="Height In Meter" style="text-align: center;">
+              </div>
+              <div class="col-auto"> 
+                  <span id="er4" style="color: red; font-size: 0.8em;"></span>
+  
+              </div>
+          </div>
+
+        
+        <br><br><br>
+        <div class="row justify-content-center align-items-center">
+            <div class="col-auto">
+               <label>What is your gender:</label> 
+                <input type="radio" name="gender" id="m" value="male" >Male
+                <input type="radio" name="gender" id="f" value="female">Female
+                <span id="er5" style="color: red; font-size: 0.8em;"></span>
+
+            </div></div>
+            <br><br><br><br>
+            <div class="row mb-3 justify-content-center align-items-center">
+                <div class="col-auto">
+                   <label>Choose your flavor :</label> 
+                </div>
+                <div class="col-auto">
+                    <span id="er6" style="color: red; font-size: 0.8em;"></span>
+                 </div>
+            </div>
+               <br>
+                   <div class="row mb-3 justify-content-center align-items-center">
+                    <div class="col-auto">
+                  <input type="checkbox" class="btn-check" id="btn-check-4" value="Strawberry" name="choice">
+                <label class="btn" for="btn-check-4"><img src="pictures/straw.jpg" width="300px" height="300px" style="border-radius: 5px 5px;"></label>
+            </div>
+                   <div class="col-auto">
+                    <input type="checkbox" class="btn-check" id="btn-check-5" value="chocolate" name="choice">
+                    <label class="btn" for="btn-check-5"><img src="pictures/choco.jpg" width="300px" height="300px" style="border-radius: 5px 5px;"></label>                </div>
+                   <div class="col-auto">
+                    <input type="checkbox" class="btn-check" id="btn-check-6" value="Vanilla" name="choice">
+                    <label class="btn" for="btn-check-6"><img src="pictures/vanilla.jpg" width="300px" height="300px" style="border-radius: 5px 5px;"></label>
+                    
+                   </div></div><br>
+                <hr>
+
+            <div class="row justify-content-center align-items-center">
+                <div class="col-auto">
+         <textarea name="text" id="text" style="height: 400px; width: 600px; margin-top: 50px;"></textarea>
+        <br>
+        
+
+                </div>
+            </div>
+
+            </form>
+
+          
+        </div>       
+        
+<br><br>
+<div class="row justify-content-center align-items-center">
+    <div class="col-auto">
+     <button onclick="printt()" class="btn btn-primary">Validate</button>
+ 
+
+         </div></div>
+
+
+
+
+
+ <br><br>
+
+ <div class="container-lg">
+
+    <div class="row ">
+        
+        <div class="col-lg-4 col-lg-6 col-sm-12">
+
+            <div class = "card">
+
+                <div class="card-body"> 
+
+                    <h3 class="card-title">
+                        Diabetes
+                    </h3>
+                    <img src="pictures/sugar.webp"  >
+                    <br><br>
+                    <p>.يؤثر تناول الكثير من الحلويات في زيادة السكري في الدم</p>
+            <br>
+
+                    <a href="https://www.mayoclinic.org/ar/diseases-conditions/hyperglycemia/symptoms-causes/syc-20373631" class="btn btn-primary"> Read more</a>
+
+                </div>
+            </div>
+
+
+        </div>
+
+        <div class="col-lg-4 col-lg-6 col-sm-12">
+
+            <div class = "card">
+
+                <div class="card-body"> 
+
+                    <h3 class="card-title">
+                        Obesity
+                    </h3>
+                    <img src="pictures/fat.avif"  >
+
+                    <br><br>
+                    <p>.تناول الكثير من الحلويات يؤثر في زيادة الوزن</p>
+            <br>
+                    <a href="https://www.mayoclinic.org/ar/diseases-conditions/diabetes/in-depth/insulin-and-weight-gain/art-20047836" class="btn btn-primary"> Read more</a>
+
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+    
+</div>
+
+
+    <script>
+        function ValidateForm() {
+            let isValid = true;
+
+            var user = document.getElementById("user");
+            let er1 = document.getElementById("er1");
+
+            var age = document.getElementById("age");
+            let er2 = document.getElementById("er2");
+
+            let wg = document.getElementById("wg");
+            let er3 = document.getElementById("er3");
+
+            let hg = document.getElementById("hg");
+            let er4 = document.getElementById("er4");
+
+            let radios=document.getElementsByName('gender');
+            let er5=document.getElementById('er5');
+
+            let check=document.getElementsByName('choice');
+            let er6=document.getElementById('er6');
+           
+
+            if (user.value === "") {
+                user.style.border = '2px solid red';
+                er1.innerHTML = "Please enter a valid username";
+                isValid = false;
+            }
+
+            if (age.value <= 0 || age.value === ""||age.value>100) {
+                age.style.border = '2px solid red';
+                er2.innerHTML = "Please enter a valid age";
+                isValid = false;
+            }
+
+            
+            if (wg.value <= 0 || wg.value === ""||wg.value>200) {
+                wg.style.border = '2px solid red';
+                er3.innerHTML = "Please enter a valid weight";
+                isValid = false;
+            }
+
+            
+            if (hg.value <= 0 || hg.value === ""||hg.value>2) {
+                hg.style.border = '2px solid red';
+                er4.innerHTML = "Please enter a valid height";
+                isValid = false;
+            }
+
+          
+           if(whatGender()==null){
+           er5.innerHTML = "Please choose one";
+                isValid = false; 
+           }
+     
+     let selectedFlavor=getCheckboxValues();
+    if(selectedFlavor<=0) {
+        er6.innerHTML = "Please choose one atleast";
+        isValid = false;
+    
+    }
+
+    
+            
+            
+          
+
+            return isValid; 
+        }
+
+       
+      function whatGender(){
+        var selectedValue=null;
+    var radios=document.getElementsByName('gender');
+    for (let i = 0; i < radios.length; i++) {
+        if (radios[i].checked) { 
+           var selectedValue = radios[i].value; 
+            break;
+        }
+    }
+    return selectedValue;
+      }
+
+      function getCheckboxValues() {
+    let checkboxes = document.getElementsByName('choice'); 
+    let selectedFlavor = [];
+
+    
+    for (let i = 0; i < checkboxes.length; i++) {
+        if (checkboxes[i].checked) {
+            selectedFlavor.push(checkboxes[i].value); 
+        }
+    }
+
+    return selectedFlavor; 
+}
+
+function suitableSweets(){
+    var message=" ";
+    var BMI=wg.value/(hg.value*hg.value);
+  
+
+    if (whatGender() == "female") {
+       if(BMI<=24.9&&BMI>=18.5){
+         message="Your BMI= "+BMI+" It is safe for you to eat Sweet ";
+        
+      }
+       else{
+       message="Your BMI = "+BMI+" Be carful in eating Sweets " ;
+      
+       }
+    } 
+    else if (whatGender()== "male") {
+
+        if(BMI<=25&&BMI>=20){
+            message=BMI+" It is safe for you to eat Sweet ";
+           
+        }
+        else{
+            message=BMI+" Be carful in eating Sweets " ;
+            
+        }
+
+    } 
+    else {
+      message= "Please select a gender";
+    }
+return message;
+}
+
+function printt() {
+    if (ValidateForm()) {
+        var textarea = document.getElementById("text");
+        let selectedFlavor = getCheckboxValues();
+
+        let output = 
+            "Name: " + user.value + "\n" +
+            "Age: " + age.value + "\n" +
+            "Weight: " + wg.value + " kg\n" +
+            "Height: " + hg.value + " m\n" +
+            "Gender: " + whatGender() + "\n" +
+            "Selected Flavors: " + selectedFlavor.join(", ") + "\n" +
+            "BMI Advice: " + suitableSweets();
+
+        textarea.value = output;
+    }
+}
+
+
+    </script>
+
+      
+    
+  </div>
+</body>
+</html>
